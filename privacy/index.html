@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy · Calmender</title>
+<style>
+  :root{
+    --bg:#F7F8FB; --surface:#FFFFFF; --text:#2A2E3A; --muted:#6B7280;
+    --accent:#3FA98A; --line:#E6E8EF; --maxw:720px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14161C; --surface:#1C1F27; --text:#E7E9F0; --muted:#9AA1B2; --line:#2A2E3A; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0 20px;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:48px 0 72px}
+  header{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:32px}
+  .brand{display:flex; align-items:center; gap:10px; font-weight:600; font-size:17px}
+  .leaf{width:26px; height:26px; border-radius:8px; background:var(--accent); display:grid; place-items:center; color:#fff; font-size:15px}
+  .toggle{display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--muted); padding:6px 14px; font:inherit; font-size:14px; cursor:pointer}
+  .toggle button.active{background:var(--accent); color:#fff}
+  h1{font-size:28px; line-height:1.25; margin:0 0 6px}
+  .updated{color:var(--muted); font-size:14px; margin:0 0 28px}
+  h2{font-size:19px; margin:34px 0 10px}
+  p,li{color:var(--text)}
+  .lead{font-size:17px}
+  a{color:var(--accent)}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:18px 0}
+  footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="leaf">🌱</span> Calmender</div>
+    <div class="toggle" role="group" aria-label="Language">
+      <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+      <button id="btn-tr" onclick="setLang('tr')">TR</button>
+    </div>
+  </header>
+
+  <!-- ───────────────────────── ENGLISH ───────────────────────── -->
+  <main id="lang-en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 31, 2026</p>
+
+    <p class="lead">Calmender is built to be calm and trustworthy — and that starts with your data. This policy explains, in plain language, what the app handles and why. Calmender is published by <strong>CS Analytics LLC</strong> (“we”, “us”).</p>
+
+    <div class="card">
+      <strong>The short version:</strong> Calmender is local-first. Your tasks and notes live on your device. We don’t use advertising or analytics trackers, and we never sell your data.
+    </div>
+
+    <h2>What stays on your device</h2>
+    <p>Your tasks, steps, day plans, energy levels, and settings are stored locally on your device (using Apple’s Core Data). If you’re signed into iCloud with sync enabled, this data syncs through your own private iCloud account (Apple CloudKit) so it stays consistent across your devices. It moves device-to-device through Apple — we can’t see it. Apple’s handling is covered by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+
+    <h2>AI features (Coach, Magic Split, Brain Dump, Morning)</h2>
+    <p>When you use an AI feature, the app sends only the minimum text needed to a secure processing function we operate (on Supabase), which forwards it to our AI provider, <strong>Anthropic (Claude)</strong>, to generate your result and return it. Specifically:</p>
+    <ul>
+      <li><strong>Magic Split</strong> — the title of the task you’re breaking down.</li>
+      <li><strong>Brain Dump</strong> — the text you type or dictate.</li>
+      <li><strong>Morning</strong> — a list of your current task titles plus your chosen energy, so they can be selected and ordered.</li>
+      <li><strong>Coach</strong> — only aggregate stats (your recent completion rate and current energy). We never send your raw task names to the Coach.</li>
+    </ul>
+    <p>This text is used only to produce your result. It is <strong>not used to train AI models</strong> — Anthropic does not train its models on data sent through its API. We do not store the content of your tasks or messages on our servers.</p>
+
+    <h2>Usage limits</h2>
+    <p>To keep the AI features sustainable and prevent abuse, we store a small counter per subscriber: an anonymous subscriber ID (assigned by RevenueCat), which feature was used, and a per-day or per-trial count. No task content is stored. This lives in our database (Supabase, in the EU — Frankfurt).</p>
+
+    <h2>Subscriptions</h2>
+    <p>Calmender Pro is sold through Apple’s In-App Purchase. <strong>Apple processes your payment — we never see your card details.</strong> We use <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> to manage subscription status; it assigns an anonymous app user ID and tells the app whether your subscription is active.</p>
+
+    <h2>Voice input</h2>
+    <p>If you add tasks by voice, the app uses Apple’s Speech Recognition. The audio and transcription are handled by Apple under Apple’s Privacy Policy. We don’t record or store your audio.</p>
+
+    <h2>Notifications</h2>
+    <p>Reminders and alarms are scheduled locally on your device. No data leaves your device to deliver them.</p>
+
+    <h2>What we do <em>not</em> collect</h2>
+    <p>We don’t collect your name, email (unless you email us), contacts, precise location, advertising identifiers, or device/usage analytics.</p>
+
+    <h2>Where your data is processed</h2>
+    <p>Our processing function and database run on Supabase in the EU (Frankfurt, eu-central-1). Our AI provider, Anthropic, processes requests on infrastructure in the United States. Text sent for AI features transits these services solely to generate your result.</p>
+
+    <h2>Children</h2>
+    <p>Calmender is not directed to children under 13 (or the minimum age required in your country). We don’t knowingly collect data from children.</p>
+
+    <h2>Your choices &amp; rights</h2>
+    <ul>
+      <li>Delete all local data by deleting the app.</li>
+      <li>Turn off iCloud sync in iOS Settings at any time.</li>
+      <li>Manage or cancel your subscription in the App Store.</li>
+      <li>For any question or request about your data, email us.</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>If we make changes, we’ll post them here and update the date above.</p>
+
+    <footer>
+      <p><strong>CS Analytics LLC</strong><br>
+      Contact: <a href="mailto:support@calmender.app">support@calmender.app</a></p>
+    </footer>
+  </main>
+
+  <!-- ───────────────────────── TÜRKÇE ───────────────────────── -->
+  <main id="lang-tr" hidden>
+    <h1>Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: 31 Mayıs 2026</p>
+
+    <p class="lead">Calmender sakin ve güvenilir olmak için tasarlandı — bu, verilerinle başlar. Bu metin, uygulamanın hangi veriyi nasıl işlediğini sade bir dille anlatır. Calmender, <strong>CS Analytics LLC</strong> (“biz”) tarafından yayımlanır.</p>
+
+    <div class="card">
+      <strong>Kısa özet:</strong> Calmender önce-cihazda çalışır. Görevlerin ve notların cihazında durur. Reklam veya analitik izleyici kullanmayız ve verini asla satmayız.
+    </div>
+
+    <h2>Cihazında kalanlar</h2>
+    <p>Görevlerin, adımların, gün planların, enerji seviyelerin ve ayarların cihazında yerel olarak saklanır (Apple Core Data ile). iCloud’a giriş yaptıysan ve eşitleme açıksa bu veriler kendi özel iCloud hesabın üzerinden (Apple CloudKit) cihazların arasında eşitlenir. Apple üzerinden cihazdan cihaza taşınır — biz göremeyiz. Apple’ın işleyişi <a href="https://www.apple.com/legal/privacy/">Apple Gizlilik Politikası</a> kapsamındadır.</p>
+
+    <h2>Yapay zekâ özellikleri (Koç, Sihirli Bölme, İçini Dök, Sabah)</h2>
+    <p>Bir yapay zekâ özelliğini kullandığında uygulama, yalnızca gereken en az metni, işlettiğimiz güvenli bir işlem fonksiyonuna (Supabase’de) gönderir; bu da sonucu üretmek için yapay zekâ sağlayıcımız <strong>Anthropic (Claude)</strong>’a iletir ve cihazına geri döner. Ayrıntılı olarak:</p>
+    <ul>
+      <li><strong>Sihirli Bölme</strong> — böldüğün görevin başlığı.</li>
+      <li><strong>İçini Dök</strong> — yazdığın ya da söylediğin metin.</li>
+      <li><strong>Sabah</strong> — mevcut görev başlıklarının listesi ve seçtiğin enerji; seçilip sıralanabilmesi için.</li>
+      <li><strong>Koç</strong> — yalnızca toplu istatistikler (son tamamlama oranın ve mevcut enerjin). Ham görev adlarını Koç’a asla göndermeyiz.</li>
+    </ul>
+    <p>Bu metin yalnızca sonucunu üretmek için kullanılır. <strong>Yapay zekâ modellerini eğitmek için kullanılmaz</strong> — Anthropic, API üzerinden gönderilen verilerle modellerini eğitmez. Görevlerinin veya mesajlarının içeriğini sunucularımızda saklamayız.</p>
+
+    <h2>Kullanım sınırları</h2>
+    <p>Yapay zekâ özelliklerini sürdürülebilir tutmak ve kötüye kullanımı önlemek için abone başına küçük bir sayaç tutarız: anonim bir abone kimliği (RevenueCat tarafından atanır), hangi özelliğin kullanıldığı ve günlük ya da deneme başına bir sayı. Görev içeriği saklanmaz. Bu veri, veritabanımızda (Supabase, AB — Frankfurt) durur.</p>
+
+    <h2>Abonelikler</h2>
+    <p>Calmender Pro, Apple Uygulama İçi Satın Alma ile satılır. <strong>Ödemeni Apple işler — kart bilgilerini biz hiç görmeyiz.</strong> Abonelik durumunu yönetmek için <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> kullanırız; anonim bir uygulama kullanıcı kimliği atar ve aboneliğinin etkin olup olmadığını uygulamaya bildirir.</p>
+
+    <h2>Sesli giriş</h2>
+    <p>Görevleri sesle eklersen uygulama, Apple Konuşma Tanıma’yı kullanır. Ses ve metne dökme, Apple Gizlilik Politikası kapsamında Apple tarafından işlenir. Sesini kaydetmez veya saklamayız.</p>
+
+    <h2>Bildirimler</h2>
+    <p>Hatırlatıcılar ve alarmlar cihazında yerel olarak planlanır. Bunların iletilmesi için cihazından hiçbir veri çıkmaz.</p>
+
+    <h2>Toplamadıklarımız</h2>
+    <p>Adını, e-postanı (bize yazmadıkça), kişilerini, kesin konumunu, reklam tanımlayıcılarını veya cihaz/kullanım analitiklerini toplamayız.</p>
+
+    <h2>Verinin işlendiği yer</h2>
+    <p>İşlem fonksiyonumuz ve veritabanımız Supabase üzerinde AB’de (Frankfurt, eu-central-1) çalışır. Yapay zekâ sağlayıcımız Anthropic, istekleri Amerika Birleşik Devletleri’ndeki altyapıda işler. Yapay zekâ özellikleri için gönderilen metin, yalnızca sonucunu üretmek üzere bu hizmetlerden geçer.</p>
+
+    <h2>Çocuklar</h2>
+    <p>Calmender, 13 yaşın (ya da ülkende gereken asgari yaşın) altındaki çocuklara yönelik değildir. Çocuklardan bilerek veri toplamayız.</p>
+
+    <h2>Seçeneklerin ve hakların</h2>
+    <ul>
+      <li>Uygulamayı silerek tüm yerel verini silebilirsin.</li>
+      <li>iOS Ayarları’ndan iCloud eşitlemesini istediğin an kapatabilirsin.</li>
+      <li>Aboneliğini App Store’dan yönetebilir veya iptal edebilirsin.</li>
+      <li>Verinle ilgili her soru veya talep için bize yaz.</li>
+    </ul>
+
+    <h2>Bu politikadaki değişiklikler</h2>
+    <p>Değişiklik yaparsak burada yayımlar ve yukarıdaki tarihi güncelleriz.</p>
+
+    <footer>
+      <p><strong>CS Analytics LLC</strong><br>
+      İletişim: <a href="mailto:support@calmender.app">support@calmender.app</a></p>
+    </footer>
+  </main>
+</div>
+
+<script>
+  function setLang(l){
+    document.getElementById('lang-en').hidden = (l!=='en');
+    document.getElementById('lang-tr').hidden = (l!=='tr');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('btn-tr').classList.toggle('active', l==='tr');
+    document.documentElement.lang = l;
+    try{ localStorage.setItem('calmender_lang', l); }catch(e){}
+  }
+  (function(){
+    var saved; try{ saved = localStorage.getItem('calmender_lang'); }catch(e){}
+    var l = saved || ((navigator.language||'en').toLowerCase().indexOf('tr')===0 ? 'tr' : 'en');
+    setLang(l);
+  })();
+</script>
+</body>
+</html>

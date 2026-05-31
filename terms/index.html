@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Terms of Use · Calmender</title>
+<style>
+  :root{
+    --bg:#F7F8FB; --surface:#FFFFFF; --text:#2A2E3A; --muted:#6B7280;
+    --accent:#3FA98A; --line:#E6E8EF; --maxw:720px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14161C; --surface:#1C1F27; --text:#E7E9F0; --muted:#9AA1B2; --line:#2A2E3A; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0 20px;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:48px 0 72px}
+  header{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:32px}
+  .brand{display:flex; align-items:center; gap:10px; font-weight:600; font-size:17px}
+  .leaf{width:26px; height:26px; border-radius:8px; background:var(--accent); display:grid; place-items:center; color:#fff; font-size:15px}
+  .toggle{display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--muted); padding:6px 14px; font:inherit; font-size:14px; cursor:pointer}
+  .toggle button.active{background:var(--accent); color:#fff}
+  h1{font-size:28px; line-height:1.25; margin:0 0 6px}
+  .updated{color:var(--muted); font-size:14px; margin:0 0 28px}
+  h2{font-size:19px; margin:34px 0 10px}
+  p,li{color:var(--text)}
+  .lead{font-size:17px}
+  a{color:var(--accent)}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:18px 0}
+  .notice{border-left:3px solid var(--accent)}
+  footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="leaf">🌱</span> Calmender</div>
+    <div class="toggle" role="group" aria-label="Language">
+      <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+      <button id="btn-tr" onclick="setLang('tr')">TR</button>
+    </div>
+  </header>
+
+  <!-- ───────────────────────── ENGLISH ───────────────────────── -->
+  <main id="lang-en">
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: May 31, 2026</p>
+
+    <p class="lead">These Terms are an agreement between you and <strong>CS Analytics LLC</strong> (“we”, “us”) about your use of the Calmender app. By downloading or using Calmender, you agree to them. If you don’t agree, please don’t use the app.</p>
+
+    <h2>1. What Calmender is</h2>
+    <p>Calmender is a planning and focus app with AI-assisted features, designed to be supportive for people with ADHD and similar needs.</p>
+
+    <div class="card notice">
+      <strong>2. Not medical advice.</strong> Calmender is a productivity and organizational tool — not a medical device, diagnosis, or healthcare service. Its content and AI responses (including the Coach) offer general, everyday support and do <strong>not</strong> constitute medical, psychological, diagnostic, or therapeutic advice, and are not a substitute for professional care. Always consult a qualified professional for health decisions. If you are in crisis, contact your local emergency services.
+    </div>
+
+    <h2>3. Who can use it</h2>
+    <p>You must be at least 18 years old, or use the app with the consent and supervision of a parent or guardian.</p>
+
+    <h2>4. Calmender Pro subscriptions</h2>
+    <ul>
+      <li><strong>What it unlocks:</strong> Coach, Magic Split, Brain Dump, and can’t-miss alarms.</li>
+      <li><strong>Plans:</strong> Monthly (US$5.99/month) and Yearly (US$59.99/year), or the equivalent in your local currency as set by Apple.</li>
+      <li><strong>Free trial:</strong> new subscribers get a 3-day free trial. If you don’t cancel at least 24 hours before it ends, it converts into a paid subscription.</li>
+      <li><strong>Auto-renewal:</strong> subscriptions renew automatically unless cancelled at least 24 hours before the current period ends. Your Apple ID is charged at confirmation and on each renewal.</li>
+      <li><strong>Manage or cancel:</strong> in the App Store → your account → Subscriptions. Deleting the app does not cancel a subscription.</li>
+      <li><strong>Refunds</strong> are handled by Apple under Apple’s terms.</li>
+    </ul>
+
+    <h2>5. Using the app responsibly</h2>
+    <p>Please don’t reverse-engineer the app, attempt to bypass its limits or security, use it unlawfully, or abuse the AI features (for example, automated or bulk requests).</p>
+
+    <h2>6. AI output</h2>
+    <p>AI responses are generated automatically and may sometimes be imperfect or inaccurate. Use your own judgment — you’re responsible for how you act on them.</p>
+
+    <h2>7. Ownership</h2>
+    <p>The app, its design, and its content are owned by CS Analytics LLC. Your own content — your tasks and notes — remains yours.</p>
+
+    <h2>8. Disclaimers</h2>
+    <p>The app is provided “as is,” without warranties of any kind. We don’t guarantee it will always be uninterrupted or error-free.</p>
+
+    <h2>9. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, CS Analytics LLC is not liable for indirect or consequential damages, or for any amount greater than what you paid for the app in the 12 months before the claim.</p>
+
+    <h2>10. Changes</h2>
+    <p>We may update the app and these Terms. If we make material changes, we’ll update the date above; continuing to use the app means you accept the updated Terms.</p>
+
+    <h2>11. Governing law</h2>
+    <p>These Terms are governed by the laws of the State of Delaware, United States, without regard to its conflict-of-laws rules.</p>
+
+    <footer>
+      <p><strong>CS Analytics LLC</strong><br>
+      Contact: <a href="mailto:support@calmender.app">support@calmender.app</a></p>
+    </footer>
+  </main>
+
+  <!-- ───────────────────────── TÜRKÇE ───────────────────────── -->
+  <main id="lang-tr" hidden>
+    <h1>Kullanım Koşulları</h1>
+    <p class="updated">Son güncelleme: 31 Mayıs 2026</p>
+
+    <p class="lead">Bu Koşullar, Calmender uygulamasını kullanımına dair seninle <strong>CS Analytics LLC</strong> (“biz”) arasında bir sözleşmedir. Calmender’ı indirerek veya kullanarak bunları kabul etmiş olursun. Kabul etmiyorsan lütfen uygulamayı kullanma.</p>
+
+    <h2>1. Calmender nedir</h2>
+    <p>Calmender, yapay zekâ destekli özelliklere sahip bir planlama ve odak uygulamasıdır; DEHB ve benzeri ihtiyaçları olan kişileri desteklemek için tasarlanmıştır.</p>
+
+    <div class="card notice">
+      <strong>2. Tıbbi tavsiye değildir.</strong> Calmender bir üretkenlik ve düzenleme aracıdır — tıbbi cihaz, teşhis veya sağlık hizmeti değildir. İçeriği ve yapay zekâ yanıtları (Koç dahil) genel, gündelik destek sunar; tıbbi, psikolojik, teşhise dayalı veya terapötik tavsiye <strong>oluşturmaz</strong> ve profesyonel bakımın yerini tutmaz. Sağlıkla ilgili kararlar için her zaman yetkin bir uzmana danış. Kriz anındaysan yerel acil servislerle iletişime geç.
+    </div>
+
+    <h2>3. Kimler kullanabilir</h2>
+    <p>En az 18 yaşında olmalısın ya da uygulamayı bir ebeveyn veya vasinin izni ve gözetimiyle kullanmalısın.</p>
+
+    <h2>4. Calmender Pro abonelikleri</h2>
+    <ul>
+      <li><strong>Neyi açar:</strong> Koç, Sihirli Bölme, İçini Dök ve kaçırılmayacak alarmlar.</li>
+      <li><strong>Planlar:</strong> Aylık (5,99 USD/ay) ve Yıllık (59,99 USD/yıl) ya da Apple’ın belirlediği yerel para birimi karşılığı.</li>
+      <li><strong>Ücretsiz deneme:</strong> yeni aboneler 3 günlük ücretsiz deneme alır. Bitmesine en az 24 saat kala iptal etmezsen ücretli aboneliğe dönüşür.</li>
+      <li><strong>Otomatik yenileme:</strong> abonelikler, dönem bitmeden en az 24 saat önce iptal edilmedikçe otomatik yenilenir. Apple Kimliğin onayda ve her yenilemede ücretlendirilir.</li>
+      <li><strong>Yönetme veya iptal:</strong> App Store → hesabın → Abonelikler. Uygulamayı silmek aboneliği iptal etmez.</li>
+      <li><strong>İadeler</strong> Apple’ın koşulları çerçevesinde Apple tarafından yürütülür.</li>
+    </ul>
+
+    <h2>5. Uygulamayı sorumlu kullanma</h2>
+    <p>Lütfen uygulamayı tersine mühendisliğe tabi tutma, sınırlarını veya güvenliğini aşmaya çalışma, hukuka aykırı kullanma ya da yapay zekâ özelliklerini kötüye kullanma (örneğin otomatik veya toplu istekler).</p>
+
+    <h2>6. Yapay zekâ çıktısı</h2>
+    <p>Yapay zekâ yanıtları otomatik üretilir ve zaman zaman kusurlu veya hatalı olabilir. Kendi muhakemeni kullan — bunlara göre attığın adımlardan sen sorumlusun.</p>
+
+    <h2>7. Mülkiyet</h2>
+    <p>Uygulama, tasarımı ve içeriği CS Analytics LLC’ye aittir. Kendi içeriğin — görevlerin ve notların — senindir.</p>
+
+    <h2>8. Feragatler</h2>
+    <p>Uygulama “olduğu gibi” sunulur; hiçbir türde garanti verilmez. Her zaman kesintisiz veya hatasız olacağını garanti etmeyiz.</p>
+
+    <h2>9. Sorumluluğun sınırlandırılması</h2>
+    <p>Yasaların izin verdiği azami ölçüde, CS Analytics LLC dolaylı veya sonuç niteliğindeki zararlardan ya da talepten önceki 12 ayda uygulama için ödediğin tutarı aşan herhangi bir miktardan sorumlu değildir.</p>
+
+    <h2>10. Değişiklikler</h2>
+    <p>Uygulamayı ve bu Koşulları güncelleyebiliriz. Önemli bir değişiklik yaparsak yukarıdaki tarihi güncelleriz; uygulamayı kullanmaya devam etmen güncel Koşulları kabul ettiğin anlamına gelir.</p>
+
+    <h2>11. Geçerli hukuk</h2>
+    <p>Bu Koşullar, kanunlar ihtilafı kurallarına bakılmaksızın Amerika Birleşik Devletleri Delaware Eyaleti yasalarına tabidir.</p>
+
+    <footer>
+      <p><strong>CS Analytics LLC</strong><br>
+      İletişim: <a href="mailto:support@calmender.app">support@calmender.app</a></p>
+    </footer>
+  </main>
+</div>
+
+<script>
+  function setLang(l){
+    document.getElementById('lang-en').hidden = (l!=='en');
+    document.getElementById('lang-tr').hidden = (l!=='tr');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('btn-tr').classList.toggle('active', l==='tr');
+    document.documentElement.lang = l;
+    try{ localStorage.setItem('calmender_lang', l); }catch(e){}
+  }
+  (function(){
+    var saved; try{ saved = localStorage.getItem('calmender_lang'); }catch(e){}
+    var l = saved || ((navigator.language||'en').toLowerCase().indexOf('tr')===0 ? 'tr' : 'en');
+    setLang(l);
+  })();
+</script>
+</body>
+</html>

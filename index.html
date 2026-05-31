@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calmender — a calm daily planner for ADHD</title>
+<meta name="description" content="Calmender is a calm daily planner for ADHD and busy minds — plan your day, break tasks down, and clear the mental clutter without streaks or guilt.">
+<style>
+  :root{
+    --bg:#F7F8FB; --surface:#FFFFFF; --text:#2A2E3A; --muted:#6B7280;
+    --accent:#3FA98A; --line:#E6E8EF;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14161C; --surface:#1C1F27; --text:#E7E9F0; --muted:#9AA1B2; --line:#2A2E3A; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text); min-height:100vh;
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .card{max-width:560px; text-align:center}
+  .leaf{width:64px; height:64px; border-radius:18px; background:var(--accent); display:inline-grid; place-items:center; color:#fff; font-size:34px; margin-bottom:20px}
+  h1{font-size:34px; margin:0 0 6px; letter-spacing:-0.02em}
+  .tag{font-size:18px; color:var(--muted); margin:0 0 28px}
+  .features{color:var(--text); font-size:15px; margin:0 auto 30px; max-width:440px}
+  .soon{display:inline-block; font-size:13px; font-weight:600; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:5px 14px; margin-bottom:30px}
+  .links{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:24px}
+  .links a{
+    text-decoration:none; color:var(--text); background:var(--surface); border:1px solid var(--line);
+    border-radius:12px; padding:11px 18px; font-weight:500; font-size:15px;
+  }
+  .links a:hover{border-color:var(--accent)}
+  .contact{font-size:14px; color:var(--muted)}
+  .contact a{color:var(--accent)}
+  footer{margin-top:36px; font-size:13px; color:var(--muted)}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="leaf">🌱</div>
+    <h1>Calmender</h1>
+    <p class="tag">A calm daily planner for ADHD &amp; busy minds.</p>
+    <p class="features">Plan your day on a simple timeline, break big tasks into doable steps, empty your head with Brain Dump, and check in with a warm coach — without streaks, guilt, or noise.</p>
+    <div class="soon">Coming soon to the App Store</div>
+    <div class="links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+    </div>
+    <p class="contact">Support: <a href="mailto:support@calmender.app">support@calmender.app</a></p>
+    <footer>© 2026 CS Analytics LLC</footer>
+  </main>
+</body>
+</html>
